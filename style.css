@@ -1,0 +1,55 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    background-color: #f4f4f9; /* Light background color */
+}
+
+/* Container for all content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container for Square Shape */
+.profile-image-container {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set the same height for a perfect square */
+    margin-bottom: 30px;
+    overflow: hidden; /* Important to contain the image */
+    border-radius: 10px; /* Optional: adds slightly rounded corners */
+    border: 4px solid #333; /* Border around the image */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block; /* Removes any extra space below the image */
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    gap: 20px; /* Space between the icons */
+}
+
+.social-links a {
+    color: #333; /* Icon color */
+    font-size: 36px; /* Size of the icons */
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+    color: #007bff; /* Color change on hover (you can change this) */
+}
